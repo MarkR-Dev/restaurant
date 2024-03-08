@@ -7,6 +7,7 @@ module.exports = {
         filename: 'index.bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true,
+        assetModuleFilename: 'assets/[name][ext]',
     },
     module: {
         rules: [
@@ -16,11 +17,11 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                use: 'asset/resource',
+                type: 'asset/resource',
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
-                use: 'asset/resource',
+                type: 'asset/resource',
             },
         ],
     },
