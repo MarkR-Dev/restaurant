@@ -19,22 +19,8 @@ function createHomePage(){
     homeTagline.textContent = `"Life's Too Short for Small Burgers!"`;
     homeTagline.classList.add("home-tagline");
 
-    const homeButtonsDiv = document.createElement("div");
-    homeButtonsDiv.classList.add("home-buttons-div")
-
-    const homeBtnTable = document.createElement("button");
-    homeBtnTable.setAttribute("type", "button");
-    homeBtnTable.textContent = "Book Table";
-    homeButtonsDiv.appendChild(homeBtnTable);
-
-    const homeBtnDeliver = document.createElement("button");
-    homeBtnDeliver.setAttribute("type", "button");
-    homeBtnDeliver.textContent = "Order Delivery";
-    homeButtonsDiv.appendChild(homeBtnDeliver);
-
     homeDiv.appendChild(homeBurgerImg);
     homeDiv.appendChild(homeTagline);
-    homeDiv.appendChild(homeButtonsDiv);
     
     return homeDiv;
 }
