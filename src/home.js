@@ -8,21 +8,21 @@ function createHomePage(){
     menuBtn.classList.remove("selected");
     contactBtn.classList.remove("selected");
 
-    const homeDiv = document.createElement("div");
-    homeDiv.classList.add("home");
+    const homePageDiv = document.createElement("div");
+    homePageDiv.classList.add("home-page");
 
     const homeBurgerImg = new Image();
     homeBurgerImg.src = BurgerImg;
     homeBurgerImg.classList.add("home-img");
 
     const homeTagline = document.createElement("h2");
-    homeTagline.textContent = `"Life's Too Short for Small Burgers!"`;
+    homeTagline.textContent = `"Life's Too Short For Small Burgers!"`;
     homeTagline.classList.add("home-tagline");
 
-    homeDiv.appendChild(homeBurgerImg);
-    homeDiv.appendChild(homeTagline);
+    homePageDiv.appendChild(homeBurgerImg);
+    homePageDiv.appendChild(homeTagline);
     
-    return homeDiv;
+    return homePageDiv;
 }
 
 export default createHomePage;
