@@ -1,4 +1,4 @@
-import LocationImg from './assets/loc.png';
+import LocationImg from '../assets/loc.png';
 
 function createContactItem(method, data){
     const contactItemDiv = document.createElement("div");

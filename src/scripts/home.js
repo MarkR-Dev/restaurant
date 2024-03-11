@@ -1,4 +1,4 @@
-import BurgerImg from './assets/burger.jpg';
+import BurgerImg from '../assets/burger.jpg';
 
 function createHomePage(){
     const homeBtn = document.querySelector("#home");
